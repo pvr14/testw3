@@ -1,0 +1,13 @@
+358  yum install wget
+  359   wget -O /etc/yum.repos.d/jenkins.repo     https://pkg.jenkins.io/redhat-stable/jenkins.repo
+  360  ls
+  361  sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+  362  yum install jenkins java-11-openjdk-devel
+  363  systemctl start jenkins
+  364  systemctl enable jenkins
+  365  ip a
+  366  systemctl status firewalld
+  367  systemctl stop firewalld
+  368  systemctl disable firewalld
+  369  cat /var/lib/jenkins/secrets/initialAdminPassword
+  370  ls
